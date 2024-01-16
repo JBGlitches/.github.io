@@ -40,8 +40,8 @@ body {
     background-color: #00FF00;
 }
 .icon {
-  max-height: 10%;
-  max-width: 10%;
+  height: 50px;
+  width: 50px;
   display: inline;
 }
 .zed {
