@@ -40,6 +40,9 @@ body {
     background-color: #00FF00;
 }
 .icon {
-  size: 50%;
+  size: 10%;
+  display: inline;
+}
+.zed {
   display: inline;
 }
