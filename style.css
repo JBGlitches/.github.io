@@ -40,8 +40,11 @@ body {
     background-color: #00FF00;
 }
 .icon {
-  scale: 10%;
+  height: 20px;
+  max-width: 20px;
   display: inline;
+  margin: 0%;
+  padding: 0%;
 }
 .zed {
   display: inline;
