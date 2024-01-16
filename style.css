@@ -39,3 +39,7 @@ body {
   .at{
     background-color: #00FF00;
 }
+.icon {
+  size: 50%;
+  display: inline;
+}
