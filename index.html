@@ -5,7 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JB Glitches</title>
   <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">\
+    <script>
+      /* When the user clicks on the button, 
+      toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+      
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+      </script>
 </head>
 <body>
   <img class="icon" src="jbglithces-removebg-preview.png">
@@ -58,27 +79,7 @@
 <p>Discovered By: Googl <br />Vehicle(s) Required: any<br />People required: 1<br />usefulness:⭐⭐<br />Funniness:⭐⭐⭐⭐<br />Difficulty:⭐ <br />HOW TO PERFORM:<br />Drive and jump out</p>
 <h3>Minimize Glitch</h3>
 <p>Discovered By: Abroad <br />Vehicle(s) Required: none<br />People required: 1<br />usefulness:⭐⭐⭐⭐⭐<br />Funniness:⭐⭐<br />Difficulty:⭐ <br />HOW TO PERFORM:<br />hold minimize</p>
-<script>
-  /* When the user clicks on the button, 
-  toggle between hiding and showing the dropdown content */
-  function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-  }
-  
-  // Close the dropdown if the user clicks outside of it
-  window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-      var dropdowns = document.getElementsByClassName("dropdown-content");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
-        }
-      }
-    }
-  }
-  </script>
+
 </div>
 </body>
 </html>
