@@ -45,15 +45,26 @@
   window.onclick = function(event) {
     if (!event.target.matches('.dropbtn')) {
       var dropdowns = document.getElementsByClassName("dropdown-content");
+      var ppop = document.getElementsByClassName("dropbtn");
       var i;
       for (i = 0; i < dropdowns.length; i++) {
         var openDropdown = dropdowns[i];
         if (openDropdown.classList.contains('show')) {
           openDropdown.classList.remove('show');
+
+        }
+      }
+      for (i = 0; i < ppop.length; i++) {
+        var opnDropdown = ppop[i];
+        if (opnDropdown.classList.contains('hide')) {
+          opnDropdown.classList.remove('hide');
+          
         }
       }
     }
-  }
+    }
+    
+  
   </script>
 <h3>Door No Clip</h3>
 <p>Discovered By: Abroad <br />Vehicle(s) Required: none<br />People required: 1<br />usefulness:⭐⭐⭐⭐<br />Funniness:⭐⭐⭐<br />Difficulty:⭐⭐⭐⭐ <br />HOW TO PERFORM:<br />Go first person<br />roll towards door<br />crouch and 180</p>
