@@ -59,9 +59,6 @@ body {
   cursor: pointer;
 }
 
-.dropbtn:hover, .dropbtn:focus {
-  background-color: #FFFFFF;
-}
 
 .dropdown {
   position: relative;
