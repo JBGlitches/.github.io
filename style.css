@@ -87,4 +87,5 @@ body {
 
 .dropdown a:hover {background-color: #ddd;}
 .show {display: block;}
+.hide {display: none;}
 
