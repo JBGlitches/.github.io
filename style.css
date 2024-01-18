@@ -51,8 +51,8 @@ body {
   display: inline;
 }
 .dropbtn {
-  background-color: white;
-  color: black;
+  background-color: #202020;
+  color: white;
   padding: 0;
   font-size: 16px;
   border: none;
