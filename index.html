@@ -28,7 +28,7 @@
 <h3>Roll Jump</h3>
 <p>Discovered By: Lup1n5<br />Vehicle(s) required: none<br />People required: 1<br />usefulness:⭐⭐⭐⭐⭐<br />Funniness:⭐⭐ <br />Difficulty:⭐⭐⭐<br /></p>
 <div class="dropdown">
-  <button onclick="myFunction()" class="dropbtn" id="boton1">How To Perform \/</button>
+  <button onclick="myFunction(1)" class="dropbtn" id="boton1">How To Perform \/</button>
   <div id="myDropdown" class="dropdown-content" >
 	<p>How To Perform ^: You need to time this almost perfectly to get the results you want. Walk forward, jump ,then while in air roll, and your character should go upwards</p>
   </div>
@@ -36,42 +36,51 @@
 <script>
   /* When the user clicks on the button, 
   toggle between hiding and showing the dropdown content */
-  function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-    document.getElementById("boton1").classList.toggle("hide");
-    document.getElementById("myDropdown2").classList.toggle("show");
-    document.getElementById("boton1").classList.toggle("hide");
+  function myFunction(num) {
+    switch(num) {
+      case 1:
+        document.getElementById("myDropdown").classList.toggle("show");
+        document.getElementById("boton1").classList.toggle("hide");
+        break;
+      case 2:
+        document.getElementById("myDropdown2").classList.toggle("show");
+        document.getElementById("boton1").classList.toggle("hide");
+      break;
+
+    }
+    
+    
   }
   
   // Close the dropdown if the user clicks outside of it
-  window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-      var dropdowns = document.getElementsByClassName("dropdown-content");
-      var ppop = document.getElementsByClassName("dropbtn");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
+  // window.onclick = function(event) {
+  //   if (!event.target.matches('.dropbtn')) {
+  //     var dropdowns = document.getElementsByClassName("dropdown-content");
+  //     var ppop = document.getElementsByClassName("dropbtn");
+  //     var i;
+  //     for (i = 0; i < dropdowns.length; i++) {
+  //       var openDropdown = dropdowns[i];
+  //       if (openDropdown.classList.contains('show')) {
+  //         openDropdown.classList.remove('show');
 
-        }
-      }
-      for (i = 0; i < ppop.length; i++) {
-        var opnDropdown = ppop[i];
-        if (opnDropdown.classList.contains('hide')) {
-          opnDropdown.classList.remove('hide');
+  //       }
+  //     }
+  //     for (i = 0; i < ppop.length; i++) {
+  //       var opnDropdown = ppop[i];
+  //       if (opnDropdown.classList.contains('hide')) {
+  //         opnDropdown.classList.remove('hide');
           
-        }
-      }
-    }
-    }
+  //       }
+  //     }
+  //   }
+  //   }
     
   
   </script>
 <h3>Door No Clip</h3>
 <p>Discovered By: Abroad <br />Vehicle(s) Required: none<br />People required: 1<br />usefulness:⭐⭐⭐⭐<br />Funniness:⭐⭐⭐<br />Difficulty:⭐⭐⭐⭐ </p>
 <div class="dropdown">
-  <button onclick="myFunction()" class="dropbtn" id="boton2">How To Perform \/</button>
+  <button onclick="myFunction(2)" class="dropbtn" id="boton2">How To Perform \/</button>
   <div id="myDropdown2" class="dropdown-content" >
 	<p>How To Perform^:Go first person; then roll towards door; finally, crouch and 180</p>
   </div>
