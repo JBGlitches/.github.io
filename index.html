@@ -37,9 +37,9 @@
   /* When the user clicks on the button, 
   toggle between hiding and showing the dropdown content */
   function myFunction(num) {
-    if (!document.getElementById(toString("myDropdown" + num)).classList.contains("show")) {    
-        document.getElementById(toString("myDropdown" + num)).classList.toggle("show");
-        document.getElementById(toString("boton" + num)).innerHTML = "How To Perform ^: ";    
+    if (!document.getElementById(`myDropdown${num}`).classList.contains("show")) {    
+        document.getElementById(`myDropdown${num}`).classList.toggle("show");
+        document.getElementById(`boton${num}`).innerHTML = "How To Perform ^: ";    
   }
     
     
