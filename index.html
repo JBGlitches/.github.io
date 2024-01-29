@@ -28,7 +28,7 @@
 <h3>Roll Jump</h3>
 <p>Discovered By: Lup1n5<br />Vehicle(s) required: none<br />People required: 1<br />usefulness:⭐⭐⭐⭐⭐<br />Funniness:⭐⭐ <br />Difficulty:⭐⭐⭐<br /></p>
 <div class="dropdown">
-  <button onclick="myFunction(1)" class="dropbtn" id="boton1">How To Perform \/</button>
+  <button onclick="myFunction(0)" class="dropbtn" id="boton0">How To Perform \/</button>
   <div id="myDropdown0" class="dropdown-content" >
 	<p>You need to time this almost perfectly to get the results you want. Walk forward, jump ,then while in air roll, and your character should go upwards</p>
   </div>
@@ -37,20 +37,9 @@
   /* When the user clicks on the button, 
   toggle between hiding and showing the dropdown content */
   function myFunction(num) {
-    if (document.getElementById(toString("myDropdown" + (num-1)))) {
-    switch(num) {
-      case 1:
-        document.getElementById("myDropdown0").classList.toggle("show");
-        document.getElementById("boton1").innerHTML = "How To Perform ^: ";
-
-      break;
-      case 2:
-        document.getElementById("myDropdown1").classList.toggle("show");
-        document.getElementById("boton2").innerHTML = "How To Perform ^: ";
-      break;
-
-
-    }
+    if (!document.getElementById(toString("myDropdown" + num)).classList.contains("show")) {    
+        document.getElementById(toString("myDropdown" + num)).classList.toggle("show");
+        document.getElementById(toString("boton" + num)).innerHTML = "How To Perform ^: ";    
   }
     
     
@@ -65,9 +54,9 @@
       var i;
       for (i = 0; i < ppop.length; i++) {
         var opnDropdown = ppop[i];
-        opnDropdown.innerHTML = "How To Perform \/";
         if (dropdowns[i].classList.contains("show")) {
-          dropdowns[i].classList.toggle("show")
+          opnDropdown.innerHTML = "How To Perform \/";
+          dropdowns[i].classList.toggle("show");
         }
       }
     }
@@ -78,7 +67,7 @@
 <h3>Door No Clip</h3>
 <p>Discovered By: Abroad <br />Vehicle(s) Required: none<br />People required: 1<br />usefulness:⭐⭐⭐⭐<br />Funniness:⭐⭐⭐<br />Difficulty:⭐⭐⭐⭐ </p>
 <div class="dropdown">
-  <button onclick="myFunction(2)" class="dropbtn" id="boton2">How To Perform \/</button>
+  <button onclick="myFunction(1)" class="dropbtn" id="boton1">How To Perform \/</button>
   <div id="myDropdown1" class="dropdown-content" >
 	<p>Go first person; then roll towards door; finally, crouch and 180</p>
   </div>
