@@ -54,7 +54,7 @@
       var i;
       for (i = 0; i < ppop.length; i++) {
         var opnDropdown = ppop[i];
-        if (opnDropdown.classList.contains("show")) {
+        if (dropdowns[i].classList.contains("show")) {
           opnDropdown.innerHTML = "How To Perform \/";
           dropdowns[i].classList.toggle("show");
         }
